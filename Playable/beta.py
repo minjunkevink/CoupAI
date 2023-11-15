@@ -1,3 +1,13 @@
+class Player:
+    def __init__(self, name):
+        self.name = name
+        self.cards = []
+        self.coins = 0
+
+class Card:
+    def __init__(self, role):
+        self.role = role
+
 class Game:
     def __init__(self, players):
         self.deck = [Card(role) for role in ["Duke", "Assassin", "Captain", "Ambassador", "Contessa"] * 3]
